@@ -1,0 +1,25 @@
+[
+    {
+      "projectName": "E-commerce Website",
+      "image": "https://i.ibb.co/y0X6PDb/Ecommerce-website.png",
+      "description": "MongoDB integration streamlines product uploads and information handling.
+      Product detail pages offer a smooth experience with Add to Cart and easy cart management.
+      Dedicated brand pages enhance the overall shopping experience by showcasing uniqueness.",
+      "livePreview": "https://brand-shop-ecommerce.netlify.app"
+    },
+    {
+      "projectName": "Job Posting website",
+      "image": "https://i.ibb.co/MDHK8wB/job-posting-website-imgage.png",
+      "description": "Allow users to register and log in, manage profiles, and use Google authentication for seamless access.
+      Enable users to apply for jobs, track application statuses, and utilize account balance for applications. Users can post, edit, and delete job listings for free, receiving success messages upon successful postin. Create a user-friendly dashboard for efficient management of job-related activities, displaying job applications, posted jobs, and their statuses.",
+      "livePreview": "https://job-posting-upwork.netlify.app"
+    },
+    {
+      "projectName": "online survey platform",
+      "image": "https://i.ibb.co/bzVq2pS/Survery-and-polling-webste.png",
+      "description": "Allow users to register and log in, manage profiles, and use Google authentication for seamless access. Surveyors can easily post, monitor, edit, or delete surveys, enhancing the user experience for those creating and managing surveys. General users can actively engage with content by viewing comments, expressing opinions through likes or dislikes, and fostering a dynamic and interactive platform.
+      Pro users enjoy exclusive features, including completing surveys and requesting additional surveys, creating a tiered system that enhances user engagement and platform value.",
+      "livePreview": "https://survey-polling.netlify.app"
+    }
+  ]
+  
