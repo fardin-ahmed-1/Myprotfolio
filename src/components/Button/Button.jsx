@@ -1,11 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
-const Button = ({lable, link}) => {
+const Button = ({ lable, handleClick, icon: Icon }) => {
   return (
-    <div>
-        <Link to={link} className='text-center font-medium text-lg text-white bg-primery rounded py-3 my-6 px-8 inline-block'>{lable}</Link>
-    </div>
+    <button onClick={handleClick} className='text-center font-medium text-base text-white bg-backgroundtrs border border-bordertrs hover:bg-hoverbgtrs duration-300 rounded-lg py-3  px-4 flex items-center gap-2'> {Icon && <Icon className=' text-2xl' />} {lable}</button>
   )
 }
 

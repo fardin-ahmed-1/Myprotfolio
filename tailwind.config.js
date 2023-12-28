@@ -7,7 +7,10 @@ export default {
         primery: '#FD346E',
         secondary: '#6001D3',
         darkbg: '#121F28',
-        textcolor: '#999999',
+        textcolor: '#ffffffbf',
+        bordertrs: '#d7d1FF35',
+        backgroundtrs: '#6b728033',
+        hoverbgtrs: '#1D3958',
       }
     },
   },

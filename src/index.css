@@ -9,10 +9,14 @@
     font-family: 'Nunito',  !important;
 } */
 body{
-    
     font-family: 'Inter', sans-serif;
-   
 }
 .active{
     color: #FD346E !important;
+  }
+  .background{
+    background: url('https://i.ibb.co/MgLjw9V/bg-scaled-1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }

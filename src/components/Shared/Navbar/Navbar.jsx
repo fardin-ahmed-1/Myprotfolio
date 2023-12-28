@@ -1,28 +1,29 @@
 import { Link } from 'react-router-dom'
 import Container from '../Container'
-import logoImg from '../../../assets/images/logo.png'
-import MenuDropdown from './MenuDropdown'
 import MenuItems from '../HeaderMenu/MenuItems'
 
 const Navbar = () => {
   return (
-    <div className='fixed w-full  bg-darkbg z-10 shadow-sm'>
-      <div className='py-4 border-b-[1px] border-neutral-500'>
+    <div className='fixed w-full  bg-backgroundtrs z-10 backdrop-blur-[10px] py-3'>
         <Container>
-          <div className='flex items-center justify-between gap-3 md:gap-0'>
+          <div className='flex items-center justify-between gap-x-10'>
             {/* Logo */}
-            <Link className='hidden md:block md:flex-1' to='/'>
-            <img className='w-1/4' src="https://i.ibb.co/rH9X1f2/Fardin-s-logo-white.png" alt="logo" />
+           <div className='sm:block md:hidden lg:block lg:w-2/12 xl:w-2/12'>
+           <Link  to='/'>
+            <img className='w-5/12 lg:w-full' src="https://i.ibb.co/rH9X1f2/Fardin-s-logo-white.png" alt="logo" />
             </Link>
-            <div  className='mx-auto '>
+           </div>
+            <div>
               <MenuItems/>
             </div>
+           
             {/* Dropdown Menu */}
             {/* <MenuDropdown /> */}
+            
           </div>
         </Container>
       </div>
-    </div>
+  
   )
 }
 export default Navbar

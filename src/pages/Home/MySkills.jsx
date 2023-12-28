@@ -4,14 +4,12 @@ import SectionLable from '../../components/Shared/SectionLable'
 
 const MySkills = () => {
     const Frontend = ['HTML', 'CSS', 'Javascript', 'React.js', 'React Router', 'Node.js', 'Express.js', 'MongoDB', 'Firebase']
-    const Libraries = ['Tailwind CSS', 'Bootstrap', 'Daisy Ui',' Meraki UI']
+    const Libraries = ['Tailwind CSS', 'Bootstrap', 'Daisy Ui', ' Meraki UI']
     const Others = ['Git', 'GitHub', 'Figma', 'WordPress', 'Wix', 'Netlify', 'Vercel', 'Canva.com', 'VS Code', 'MS Office']
     return (
         <Container>
-            <div className='py-10'>
-                <SectionLable title='My Skills' />
-            </div>
-            <div className='flex flex-col-reverse md:flex-row gap-10 justify-between'>
+            
+            <div className='flex flex-col-reverse md:flex-row gap-10 justify-between mt-24'>
                 <div className='flex-1'>
                     <h1 className='text-2xl font-medium text-neutral-200 mt-2 mb-3'>
                         Intent-Focused Web Developer

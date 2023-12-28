@@ -4,6 +4,7 @@ import Hero from "./Hero"
 import MySkills from "./MySkills"
 import Portfolios from "./Portfolios/Portfolios"
 import SkillLogo from "./SkillLogo"
+import WorkingSection from "./Working/WorkingSection"
 
 const Home = () => {
   return (
@@ -13,11 +14,10 @@ const Home = () => {
       </div>
       <SkillLogo/>
       <div id="about" className="overflow-hidden">
-      <About/>
+      {/* <About/> */}
+      <WorkingSection/>
       </div>
-      <div className="experince">
-      <MySkills/>
-      </div>
+    
      <div id="portfolios">
      <Portfolios/>
      </div>

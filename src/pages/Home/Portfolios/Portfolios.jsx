@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Container from '../../../components/Shared/Container'
 import { getportfolios } from '../../../Apis/GetMethod'
 import Portfolio from './Portfolio'
 import SectionLable from '../../../components/Shared/SectionLable'
+import ExLink from '../../../components/Button/ExLink'
+import { GoPlusCircle } from "react-icons/go";
 
 const Portfolios = () => {
     const [loading, setLoading]=useState(false)
-    const [allportfolios, setPortfolios]=useState([])
+    const [portfolios, setPortfolios]=useState([])
 
- 
     useEffect(()=>{
         setLoading(true)
         getportfolios()
@@ -19,16 +20,19 @@ const Portfolios = () => {
     },[])
    
   return (
-      <div className='pb-12 md:pb-16 '>
+      <div>
           <Container>
-            <div className='mt-12 mb-10 md:mt-20 md:mb-12'>
+            <div className='pt-24 pb-10'>
             <SectionLable title='Latest projects'/>
             </div>
            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8' >
            {
-                allportfolios.map(portfolio=><Portfolio key={portfolio._id} 
+                portfolios.map(portfolio=><Portfolio key={portfolio._id} 
                 portfolio={portfolio}></Portfolio>)
             }
+           </div>
+           <div className='flex justify-center mt-8'>
+            <ExLink icon={GoPlusCircle} lable='Load More'/>
            </div>
         </Container>
       </div>

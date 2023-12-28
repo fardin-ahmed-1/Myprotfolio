@@ -4,6 +4,8 @@ import Button from '../../components/Button/Button'
 import Container from '../../components/Shared/Container'
 import resume from '../../../public/Resume.pdf'
 import SectionLable from '../../components/Shared/SectionLable'
+import { MdOutlineDownloading } from "react-icons/md";
+import Pera from '../../components/Shared/Content/Pera'
 
 const About = () => {
 
@@ -31,26 +33,21 @@ const About = () => {
         }
       };
     return (
-        <div className='pt-16'>
+        <div className='mt-20'>
             <Container>
-            <div className='pb-8 md:pb-10'>
-            <SectionLable title='About Me'/>
-            </div>
-                <div className='flex flex-col md:flex-row gap-10 items-center justify-between'>
-                    <div className='md:w-[700px] lg:w-[600px] '>
+                <div className='flex flex-col md:flex-row gap-8 items-center justify-between bg-backgroundtrs p-5 md:p-7 border border-bordertrs hover:border-primery duration-300 rounded-xl'>
+                    <div className='md:w-[750px] lg:w-[600px] '>
                         <img width='100%' className='rounded-lg shadow-md' src="https://i.ibb.co/Q890VYF/Untitled-design-2.png" alt="" />
                     </div>
 
                     <div className='w-full'>
-                        <h1 className='text-3xl font-medium my-1 text-white'>
-                         Hi There! I'm Fardin</h1>
+                        <h1 className='text-4xl md:text-5xl font-semibold my-1 text-white'>
+                         Hi There! I'm <span className=' text-primery ml-1'> Fardin. </span></h1>
                         <h1 className='text-xl font-normal text-neutral-200 mt-2 mb-3'>Front-end Developer & WordPress, wix (CMS) Expert.
                         </h1>
-                        <p className='text-lg text-textcolor font-normal'>
-                        Passionate MERN Stack Developer and seasoned expert in Content Management Systems (CMS) such as WordPress and Wix. Residing in Dhaka, Bangladesh, I dedicate a minimum of 12-14 hours every day to my craft. For me, web development is not just a job—it's my life and everything I love. I thrive on the excitement of learning new things daily.
-                        </p>
+                        <Pera pera="Passionate MERN Stack Developer and seasoned expert in Content Management Systems (CMS) such as WordPress and Wix. Residing in Dhaka, Bangladesh, I dedicate a minimum of 12-14 hours every day to my craft. For me, web development is not just a job—it's my life and everything I love. I thrive on the excitement of learning new things daily."/>
                        
-                        <div className='flex items-center mt-5  gap-10'>
+                        <div className='flex items-center mt-5  gap-5'>
                             <div>
                                 <h1 className='text-lg font-normal text-neutral-300 mb-2'>Phone</h1>
                                 <h1 className='text-lg font-normal text-neutral-300 mb-2'>Email</h1>
@@ -67,12 +64,9 @@ const About = () => {
                                
                             </div>
                         </div>
+
                         <div className='flex items-center gap-4'>
-                            
-                            <button onClick={handleDownloadResume} 
-                                className='text-center font-medium text-lg text-white bg-primery  rounded py-[10px] my-4 px-6 inline-block'>
-                               Download CV
-                            </button>
+                        <Button lable='Download CV' handleClick={handleDownloadResume} icon={MdOutlineDownloading}/>                         
                         </div>
                     </div>
 
