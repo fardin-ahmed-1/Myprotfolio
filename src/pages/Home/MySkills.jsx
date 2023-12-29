@@ -22,7 +22,7 @@ const MySkills = () => {
                         </h1>
                         <div className='flex flex-wrap gap-3'>
                             {
-                                Frontend.map(skill => <h1 className='text-base font-medium text-neutral-400'>{skill}</h1>)
+                                Frontend.map((skill, index) => <h1 key={index} className='text-base font-medium text-neutral-400'>{skill}</h1>)
                             }
                         </div>
                     </div>
@@ -33,7 +33,7 @@ const MySkills = () => {
                         </h1>
                         <div className='flex flex-wrap gap-3'>
                             {
-                                Libraries.map(skill => <h1 className='text-base font-medium text-neutral-400'>{skill}</h1>)
+                                Libraries.map((skill, index) => <h1 key={index} className='text-base font-medium text-neutral-400'>{skill}</h1>)
                             }
                         </div>
                     </div>
@@ -44,7 +44,7 @@ const MySkills = () => {
                         </h1>
                         <div className='flex flex-wrap gap-3'>
                             {
-                                Others.map(skill => <h1 className='text-base font-medium text-neutral-400'>{skill}</h1>)
+                                Others.map((skill, index) => <h1 key={index} className='text-base font-medium text-neutral-400'>{skill}</h1>)
                             }
                         </div>
                     </div>

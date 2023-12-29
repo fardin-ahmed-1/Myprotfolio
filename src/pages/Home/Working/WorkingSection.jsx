@@ -46,19 +46,13 @@ const WorkingSection = () => {
                     <div className='w-full'>
                         <h1 className='text-4xl md:text-4xl font-semibold my-1 text-white mb-4'>Let's Develop a Awesome Website for your Business</h1>
                        
-                        <Pera pera="As a Mern Stack Developer, I'm passionate about crafting captivating and user-friendly interfaces. With a keen eye for design, I bring websites to life, ensuring a seamless user experience. Let's transform your digital presence into a visual masterpiece that captivates from the first click."/>
+                        <Pera pera="Let's transform your business into a digital success story! I'm Fardin Ahmed, a seasoned web developer, and I'm here to craft an awesome website tailored to your unique needs. With expertise in HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, React, Node.js, Express.js, MongoDB, and Firebase, I ensure a seamless and visually appealing online presence."/>
 
                        <div className='my-3'>
-                       <Pera pera="As a WordPress specialist, I build dynamic websites using Elementor and Crocoblock Jet plugins. Let's collaborate to bring your vision to life on the powerful WordPress platform"/>
+                       <Pera pera="Whether you're a small startup or a growing business, my passion for web development extends to creating user-friendly and engaging websites that leave a lasting impression. Let's collaborate and turn your vision into a powerful online reality. Ready to elevate your business? Let's develop something awesome together!"/>
                        </div>
 
-                        <Pera pera="I specialize in developing websites that not only capture attention but also convert visitors into valued customers. Let's transform your online presence into a powerful tool for business growth."/>
-                       
-                        
-
-                        <div className='flex items-center gap-4 mt-4'>
-                        <Button lable="Let's Get Started"/>                         
-                        </div>
+                        <Pera pera="Empower your business with a standout website. I'm Fardin Ahmed, your dedicated web developer, ready to turn your vision into digital reality."/>
                     </div>
 
                 </div>

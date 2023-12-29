@@ -13,7 +13,7 @@ const DropdownItems = ({menuItems, mobileMenu}) => {
     <div className={`flex flex-col overflow-y-auto gap-4 max-h-screen  absolute top-[67px] sm:top-[95px]  lg:top-24 w-56 duration-500 background ${mobileMenu ? 'right-0' : '-right-60'}`}>
         <div className='flex flex-col items-start gap-2 p-4 border border-bordertrs h-screen'>
             {
-                menuItems.map(item => <Menuitem item={item} />)
+                menuItems.map((item, index) => <Menuitem item={item} key={index} />)
             }
             <Button icon={MdEventAvailable} lable='Hire Me' />
             <div className='border-t border-neutral-400 my-3 '>

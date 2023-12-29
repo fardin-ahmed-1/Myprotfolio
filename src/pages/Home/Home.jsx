@@ -1,7 +1,5 @@
-import About from "./About"
 import Contact from "./Contact"
 import Hero from "./Hero"
-import MySkills from "./MySkills"
 import Portfolios from "./Portfolios/Portfolios"
 import SkillLogo from "./SkillLogo"
 import WorkingSection from "./Working/WorkingSection"
@@ -17,7 +15,6 @@ const Home = () => {
       {/* <About/> */}
       <WorkingSection/>
       </div>
-    
      <div id="portfolios">
      <Portfolios/>
      </div>

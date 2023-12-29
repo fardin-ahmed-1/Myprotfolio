@@ -14,27 +14,27 @@ const MenuItems = () => {
     const [mobileMenu, setMobileMenu] = useState(false)
     const menuItems = [
         {
-            address: 'home',
+            address: '/',
             icon: AiOutlineHome,
             label: 'Home'
         },
         {
-            address: 'about',
+            address: '/about',
             icon: AiOutlineInfoCircle,
             label: 'About'
         },
         {
-            address: 'experince',
+            address: '/experince',
             icon: IoSettingsOutline,
             label: 'Experince'
         },
         {
-            address: 'portfolios',
+            address: '/portfolios',
             icon: SiWheniwork,
             label: 'Portfolios'
         },
         {
-            address: 'contact',
+            address: '/contact',
             icon: RiCustomerService2Fill,
             label: 'Contact'
         },
@@ -45,7 +45,7 @@ const MenuItems = () => {
             <div className='gap-2 lg:gap-5 hidden md:flex'>
                 <div className='flex items-center gap-2 bg-backgroundtrs px-3 md:px-2 lg:px-3 rounded-lg py-1 border border-bordertrs backdrop-blur-[50px] flex-1'>
                     {
-                        menuItems.map(item => <Menuitem item={item} />)
+                        menuItems.map((item, index) => <Menuitem item={item}  key={index}/>)
                     }
                 </div>
                 <div className=''>
