@@ -22,7 +22,7 @@ const Portfolios = () => {
   return (
       <div>
           <Container>
-            <div className='pt-24 pb-10'>
+            <div className='pt-16 pb-10'>
             <SectionLable title='Latest projects'/>
             </div>
            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8' >
